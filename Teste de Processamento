@@ -1,37 +1,40 @@
-package entrada_de_dados;
-import java.util.Scanner;
-import java.util.Locale;
-public class Main {
+package teste_processamento2;
+
+public class Main1 {
 
 	public static void main(String[] args) {
-		
-		Locale.setDefault(Locale.US);
-		Scanner sc = new Scanner(System.in); // Objeto obrigatorio da LP java, para entrada de dados, recebidas pelo o Teclado.
-		//Declarando as variáveis
-		
-	  //char x;
-		String x;
-		int y;
-		double z;
-		//Atribuindo o comando de entrdada de dados.
-		//sc.next().
-		//Para cada tipo de variavél, um comando de codigo especofico tem que ser atribuido a ele.
-		//Como mostra na linha abaixo.
-		x = sc.next();
-		y = sc.nextInt();
-		z = sc.nextDouble();
-	  //w = sc.next.charAt(); 
-		
-		//imprimindo os dados na tela.
-		//Saida de dados.
-		System.out.println("Dados digitados:" );
-		System.out.println(x);
-		System.out.println(y);
-		System.out.println(z);
-		
-		
-		sc.close();// Fim do metodo Scaner.sc
-		
+	// Atribuindo tipo da variavél
+	int a, b ;
+	double resultado;
+	//Atribuindo valores as variavéis
+	
+	a = 5;
+	b = 2;
+	
+	//Execultando a operação, que dará valor a variavél resultado.
+	
+	resultado = (double) a / b;
+	
+	//Obs: Em exemplos de divisão de inteiros, mesmo sendo pra um resultado double o programa vai reconhecer como divisão de inteiros.
+	//Pra isso prescisa ser feito o Castinh( conversão ). Usa -se (doble) entre parentes, para dizer que ali vai ser uma divisão de ponto flutuante.
+	//Para que o resultado seja gerado com as casas decimais.
+	
+	System.out.println(resultado);
+	
+	//Como dica de boa prática!!
+	//Sempre idique o tipo de número, se a expressão for de ponto flutuante (não inteira).
+	//Para double use: .0
+	
+	// b = 6.0
+	// c = 5.0
+	// d = 4.0
+	
+	//Para float use: f
+	
+	// b = f
+	// c = f
+	// d = f
+	
 	}
 
 }
