@@ -1,0 +1,38 @@
+package exer_01;
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		  Scanner input = new Scanner(System.in);
+	       /* 
+	       double larg;
+	       double comp;
+	       double val_mq;
+	       double area;
+	       double preco_mq;
+
+	       larg = input.nextDouble();
+	       comp = input.nextDouble();
+	       val_mq = input.nextDouble();
+
+	       area = larg * comp;
+	       preco_mq = area * val_mq;
+	       */
+		  	System.out.print("Entre com a largura: ");
+	        double larg = input.nextDouble();
+	     
+	        System.out.print("Entra com o Comprimento: ");
+	        double comp = input.nextDouble();
+	        
+	        System.out.print("Entra com o Valo do Metro/2: ");
+	        double val_mq = input.nextDouble();
+
+	        double area = larg * comp;
+	        double preco = area * val_mq;
+
+	        System.out.printf("Valor da AREA = %.2f%n", area );
+	        System.out.printf("Valor do PREÇO = %.2f%n", preco);
+
+
+
+	        input.close();
