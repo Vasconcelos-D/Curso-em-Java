@@ -1,0 +1,62 @@
+package exer_01;
+// Programa para calculos das seguintes formas Geometricas
+//Ao receber os dados ele faz o calculo e impreme da tela cada equação referente a forma geometrica.
+import java.util.Scanner; 
+import java.util.Locale;
+public class Main
+{
+    public static void main(String[] args) //  Metodo main.
+    {
+       Locale.setDefault(Locale.US);
+       Scanner input = new Scanner(System.in); // Entrada de dados, Metodo Scanner.
+       // Declarando tipo de variavéis
+       double tri;
+       double tra;
+       double qua;
+       double cir;
+       double ret;
+       
+       double pi = 3.14159;
+       // Recebendo o dado de cada variavél, já atribuindo o valor de cada.
+       System.out.print("Entre com Primeiro valor: ");
+       double A = input.nextDouble();
+       // Quando coloco tipo da variavél ( float ) primeiro, seguida varivél que vai receber dados.
+       // Mesmo que dizer. (double A;) em seguida ( A = inpur.nextDouble(););
+       
+       System.out.print("Entre com Segundo  valor: ");
+       double B = input.nextDouble();
+       System.out.print("Entre com Terceiro valor:");
+       double C = input.nextDouble();
+       System.out.println();
+        // Fazendo o calculo para cada forma geometrica.
+       tri = (A * C) / 2;
+       cir = pi * C * C;
+       tra = (A + B) / 2 * C;
+       //qua = B * B;
+       qua = Math.sqrt(B);
+       ret = A * B;
+       // Imprimido na tela o resultado de cada forma.
+       System.out.printf("Valor do Triangulo é: %.3f%n", tri);
+       System.out.printf("Valor do Circulo   é: %.3f%n", cir);
+       System.out.printf("Valor do Trapézio  é: %.3f%n", tra);
+       System.out.printf("Valor do Quadrado  é: %.3f%n", qua);
+       System.out.printf("Valor do Retangulo é: %.3f%n", ret);
+      
+        input.close();// Fim do metedo Scanner.
+
+        
+    }
+
+}
+
+Saida na tela : 
+
+Entre com Primeiro valor: 3.0
+Entre com Segundo valor: 4.0
+Entre com Terceiro valor:5.2
+
+Valor do Triangulo é: 7.800
+Valor do Circulo   é: 84.949
+Valor do Trapézio  é: 18.200
+Valor do Quadrado  é: 2.000
+Valor do Retangulo é: 12.000
