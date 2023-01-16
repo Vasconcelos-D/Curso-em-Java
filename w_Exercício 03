@@ -1,0 +1,45 @@
+package exer_01;
+// Programa de soma entre dos valores. O programa recebe dos produtos 1 e 2 e soma os seus valores de acordo com a quantidade de cada peça.
+import java.util.Scanner;
+import java.util.Locale;
+public class Main
+{
+    public static void main(String[] args) 
+    {
+       Locale.setDefault(Locale.US);
+       Scanner input = new Scanner(System.in); // Metodo de Entrada de dados Scanner
+       
+         float cod_1, und_peca1, valor_peca1, cod_2, unidPeca2, valPeca2, total;// já declaerei todoas as variavéis na mesma linha de cogigo 
+         // para evitar  a escrita de varias linhas.
+       		
+       		
+       		// Entradada de dados para cada variavél
+            System.out.print("Entre com Codigo 1: ");
+            cod_1 = input.nextFloat();
+            
+            System.out.print("Entre com quantidade de Peças 1: ");
+            und_peca1 = input.nextFloat();
+            
+            System.out.print("Entre com o valor da Peça 1 : ");
+            valor_peca1 = input.nextFloat();
+            
+            System.out.print("Entre com Codigo 2: ");
+            cod_2 = input.nextFloat();
+            
+            System.out.print("Entre com quantidade de Peças 2: ");
+            unidPeca2 = input.nextFloat();
+            
+            System.out.print("Entre com o valor da Peça 2 : ");
+            valPeca2 = input.nextFloat();
+            
+            total = (und_peca1 * valor_peca1) + (unidPeca2 * valPeca2); // calculo para a soma do valor de cada peça)
+            
+          
+            System.out.printf("valor total:%.2f% ", total); // Impressão na tela do resultado.
+
+        input.close();
+
+        
+    }
+
+}
