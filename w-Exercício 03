@@ -38,8 +38,7 @@ public class Main
             System.out.printf("valor total:%.2f% ", total); // Impressão na tela do resultado.
 
         input.close();
-
-        
+                
     }
 
 }
