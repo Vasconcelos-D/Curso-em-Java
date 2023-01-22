@@ -2,9 +2,11 @@ package curso_prog;
 
 import java.util.Locale;
 
-public class Main {
-
-	public static void main(String[] args) {
+public class Main 
+{
+	public static void main(String[] args) 
+	{
+	
 	
 
 		
@@ -36,6 +38,8 @@ public class Main {
 	}
 
 }
+
+
 //Resultado.
 Resultado pra impre
 Programa teria que impri 
